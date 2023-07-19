@@ -30,6 +30,7 @@ private:
 
     RefPtr<Gfx::Font const> m_font;
     float m_opacity;
+    u8 m_blur_radius;
     ByteString m_color_scheme;
     VT::CursorShape m_cursor_shape { VT::CursorShape::Block };
     bool m_cursor_is_blinking_set { true };
@@ -38,6 +39,7 @@ private:
 
     RefPtr<Gfx::Font const> m_original_font;
     float m_original_opacity;
+    u8 m_original_blur_radius;
     ByteString m_original_color_scheme;
     VT::CursorShape m_original_cursor_shape;
     bool m_original_cursor_is_blinking_set;
